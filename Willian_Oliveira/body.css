@@ -1,0 +1,29 @@
+body {
+
+        background:image ("J.jpeg");
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        margin: 0;
+        padding: 10px 20px;
+        color: white;
+}
+
+.red-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        font-size: 32px;
+        background-color: brown;
+        color: aliceblue;
+        border: 2px solid #c0392b
+    }
+            
+.red-button {
+        background-color: black;
+    }
+
