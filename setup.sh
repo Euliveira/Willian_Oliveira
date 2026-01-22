@@ -1,12 +1,17 @@
 #!/bin/bash
 
-echo " Iniciando instalação do ambiente DeepScalp IA..."
+echo "Iniciando configuração do DeepScalp IA..."
 
-# Atualizando o pip
-python -m pip install --upgrade pip
+# Verifica se o Python está instalado
+if ! command -v python3 &> /dev/null
+then
+    echo "Python3 não encontrado. Por favor, instale o Python antes de continuar."
+    exit
+fi
 
-# Instalando as bibliotecas necessárias
-echo " Instalando dependências (Requests, Pandas, NumPy)..."
+# Instalação das bibliotecas
+echo "Instalando dependências (Requests, Pandas, NumPy)..."
 pip install requests pandas numpy
 
-echo " Tudo pronto! Agora configure seu arquivo config_client.py e execute o bot."
+echo "Instalação concluída com sucesso!"
+echo "Lembre-se de configurar suas chaves no arquivo config_client.py antes de rodar o bot."
